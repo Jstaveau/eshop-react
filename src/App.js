@@ -1,9 +1,11 @@
 
+import Argent from "./Argent";
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Argent /> 
+    </>
   );
 }
 

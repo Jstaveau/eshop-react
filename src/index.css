@@ -2,4 +2,95 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+  width: 80%;
+  margin: auto;
+}
+
+.produits{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produit{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produit p{
+  margin-top: 5px;
+}
+.produit button{
+  margin-top: 20px;
+}
+.produit button, .rendre{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: solid 1px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.produit button:hover , .rendre:hover{
+  background-color: darkred;
+}
+
+.produits img{
+  width: 300px;
+  height: 300px;
+}
+
+.titre-argent{
+  text-align: center;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.description{
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.stock-null{
+  background-color: red;
+  color: white;
+}
+.stock-faible{
+  background-color: yellow;
+}
+
+.d-none{
+  display: none;
+}
+
+.panier{
+  margin-top: 20px;
+}
+
+.panier h1{
+  margin-bottom: 10px;
+}
+
+.produit-panier{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.produit-panier button {
+  margin-left: 20px;
 }
