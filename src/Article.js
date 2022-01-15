@@ -8,9 +8,11 @@ export default function Article(props) {
                 <h2>{props.nom}</h2>
                 <p>Prix : {props.prix}€</p>
                 <p>Stock : {props.stock} unités.</p>
-                <button onClick={ () => {
+                <button 
+                className={props.classNone}
+                onClick={ () => {
+                    props.uniteProduit()
                     props.acheter()
-                    props.verif()
                     }}>ACHETER</button>
             </div>
         </div>
